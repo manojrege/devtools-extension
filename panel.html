@@ -1,10 +1,29 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-	<button id="executescript">Execute script in inspected page</button>
-	<button id="insertscript">Insert script into inspected page</button>
-	<button id="insertmessagebutton">Insert button to send a message from page to devtools</button>
-	<script src="messaging.js"></script>
+	<fieldset>
+	<legend>Network Connection</legend>
+	<div>
+	<select id="connection">
+	<option value="3g">3G</option>
+	<option value ="wifi">Wifi</option>
+	<option value="lte">LTE</option>
+    </select>
+    </div>
+    </fieldset>
+	<fieldset>
+	<legend>Device Type</legend>
+	<div><input type="text" /></div>
+	<div>
+	<select id="device">
+	<option value="real">Real</option>
+	<option value ="emulator">Emulator</option>
+    </select>
+    </div>
+    </fieldset>
 	<script src="panel.js"></script>
 </body>
 </html>

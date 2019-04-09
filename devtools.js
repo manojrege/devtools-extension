@@ -1,6 +1,5 @@
-// Can use
-// chrome.devtools.*
-// chrome.extension.*
+chrome.devtools.panels.create("HarPanel", "toast.png", "panel.html", function(panel) {});
 
-// Create a tab in the devtools area
-chrome.devtools.panels.create("DemoPanel", "toast.png", "panel.html", function(panel) {});
+
+
+
